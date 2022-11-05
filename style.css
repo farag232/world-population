@@ -1,0 +1,123 @@
+*{
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+  body{
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(10, 0, 0, 0.5);
+    background-image: url(/image/world-map-background-in-navy-blue-and-gold-free-vector.jpg);
+    
+    
+ }
+ #ContainerChart{
+    width: 950px;
+ } 
+ .continentBtnContainer{
+    padding: 7px;
+    margin-top: 10px;
+    margin-right: 10px;
+ }
+ 
+ 
+ .citeisBtns{
+    padding: 2px;
+    margin: 7px;
+    background: linear-gradient(#6b08ec,#04f8e4);
+    color: #02010a;
+    cursor: pointer;
+    border: solid 1px rgb(19, 18, 18);
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 0 20px 50px rgba(0,0,0,.5);
+ }
+ .citeisBtns::before{
+   content: '';
+   position: absolute;
+   background: rgba(255,255,255,0.05);
+   color: #0af574e7;
+    
+ }
+ canvas{
+    font-size: 30px;
+ }
+ 
+ 
+    
+
+ 
+
+
+ .citeisBtns:hover{
+    color: aqua;
+    background: #090235;
+ }
+ .city{
+    font-size:0.8rem;
+    
+ }
+ .city:hover{
+    color: aqua;
+    background: #090235;
+ }
+ .cityCon{
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 20px);
+ }
+ .header{
+    margin: 5px;
+    font-style: italic;
+    font-family: cursive;
+    color: #f8610a;
+ }
+ .turn_screen{
+    display: none;
+ }
+ @media (max-width: 1000px) {
+    #myChartContainer{
+       width: 600px;
+    } 
+    .cityCon{
+       width: calc(100% - 230px);
+    }
+  }
+  @media (max-width: 600px) {
+    #myChartContainer{
+       width: 400px;
+    } 
+    .cityCon{
+       width: calc(100% - 230px);
+    }
+  }
+  @media (max-width: 600px) {
+    #myChartContainer{
+       display: none;
+    } 
+    .cityCon{
+       display: none;
+    }
+    .continentBtnContainer{ 
+        display: none;
+    }
+    .myChartContainer{
+       display: none;
+    } 
+    .turn_screen{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        padding: 20px;
+    }
+    .turn_screen h1{
+        text-align: center;
+        font-size: 50px;
+    }
+  }
